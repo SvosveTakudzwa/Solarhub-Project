@@ -1,0 +1,239 @@
+body{
+	font-size: 20px;
+	box-sizing: border-box;
+}
+img{
+	width: 500px;
+	height: 150px;
+	margin-top: 15px;
+	margin-left: 195px;
+	cursor: pointer;
+}
+.top_margin{
+	margin-top: -42px;
+}
+.heading_circle{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: -23px;
+	margin-top: 18px;
+	background-color: gold;
+}
+.centre_align_heading{
+	text-decoration: underline;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 0;
+	cursor: pointer;
+}
+.page{
+	border-style: solid;
+	margin: auto;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	display: block;
+	width: 68%;
+}
+.upper_case{
+	text-transform: uppercase;
+}
+.heading_color{
+	color: blue;
+	cursor: pointer;
+}
+.list_align{
+	display: flex;
+	font-size: 16px;
+	margin-top: -37px;
+}
+.list_align ul li{
+	list-style-type: disc;
+	cursor: pointer;
+}
+.list_align ul li:Hover{
+	color: red;
+}
+.price_font{
+	font-size: 30px;
+	color: white;
+}
+.pricetag{
+	background-color: red;
+	width: 140px;
+	padding-left: 10px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -44px;
+	cursor: pointer;
+}
+.pricetag:hover{
+	background-color: blue;
+}
+.column_division{
+	border: 2px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+.content_row{
+	display: flex;
+	margin-top: -37px;
+}
+.bottom_border{
+	border-color: navy;
+	border-width: 0.5px;
+	border-bottom-style: solid;
+	height: 175px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.vertical_line{
+	border-style: solid;
+	border-color: gold;
+	height: 105px;
+	margin-top: 11px;
+	margin-left: auto;
+	margin-right: -20px;
+	border-width: 1px;
+}
+.promotion_star{
+	margin-top: 40px;
+	margin-left: 150px;
+	width: 195px;
+	height: 195px;
+	background-color: gold;
+	transform: rotatez(45deg);
+	border-color: red;
+}
+.promotion_star:before,.promotion_star:after{
+	content: "";
+	position: absolute;
+	width: 195px;
+	height: 195px;
+	background-color: gold;
+	border-color: red;
+}
+.promotion_star:before{
+	transform: rotatez(60deg);
+}
+.promotion_star:after{
+	transform: rotatez(-60deg);
+}
+.caps{
+	text-transform: capitalize;
+}
+.red_font_color{
+	color: red;
+}
+.promotion_tag{
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-color: red;
+	border-width: 1.8px;
+	background-color: gold;
+	width: 287px;
+	height: 63px;
+	padding-top: 0;
+	margin: -132px 2px -2px 355px;
+	border-radius: 0px 20px 20px 0px;
+	cursor: pointer;
+}
+.promotion_text{
+	margin-left: 22px;
+	margin-top: 12px;
+	font-size: 16px;
+}
+footer{
+	background-color: yellow;
+	margin-top: 130px;
+	text-align: center;
+	color: maroon;
+	font-size: 33px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	cursor: pointer;
+}
+
+/*For small screen*/
+@media screen and (min-width: 2px) and (max-width: 500px){
+	.page{
+		width: 100%;
+	}
+	img{
+		width: 65%;
+		height: 97px;
+		margin-top: 10px;
+		margin-left: auto;
+		padding-left: 72px;
+	}
+	.centre_align_heading{
+		font-size: 35px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.content_row{
+		display: block;
+		margin-top: 10px;
+		width: 30%;
+		margin-left: 38px;
+	}
+	.promotion_star{
+		margin-top: 27px;
+		margin-left: 80px;
+		width: 100px;
+		height: 100px;
+	}
+	.promotion_star:before,.promotion_star:after{
+		width: 100px;
+		height: 100px;
+	}
+	.promotion_tag{
+		width: 218px;
+		height: 47px;
+		margin: -76px 2px -2px 185px;
+	}
+	.promotion_text{
+		margin-left: 11px;
+		margin-top: 8px;
+		font-size: 13px;
+	}
+	footer{
+		margin-top: 62px;
+		font-size: 22px;
+	}
+}
+
+/*For tablet mode*/
+@media screen and (min-width: 501px) and (max-width: 800px){
+	.page{
+		width: 100%;
+	}
+	img{
+		width: 65%;
+		height: 127px;
+		margin-top: 10px;
+		margin-left: 40px;
+		padding-left: 72px;
+	}
+	.centre_align_heading{
+		font-size: 35px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	/*.content_row{
+		display: block;
+		margin-top: 10px;
+		width: 30%;
+		margin-left: px;
+	}*/
+}
